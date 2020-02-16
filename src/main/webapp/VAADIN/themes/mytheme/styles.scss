@@ -1,0 +1,57 @@
+@import "mytheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.mytheme {
+  @include addons;
+  @include mytheme;
+
+  .header{
+    background-color: #71b0bb;
+  }
+  .container{
+    background-color: #00326d;
+  }
+  .label{
+    color : white;
+  }
+
+  .v-button-table1 {
+    height: 37px;
+    padding: 0 16px;
+    color: #f0f4f9;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid #3a6bc0;
+    border-top-color: #3b6dc0;
+    border-bottom-color: #3666bc;
+    background-color: #4783eb;
+    background-image: -webkit-linear-gradient(top, #4986eb 2%, #427de6 98%);
+    background-image: linear-gradient(to bottom,#4986eb 2%, #427de6 98%);
+    -webkit-box-shadow: inset 0 1px 0 #78a0ed;
+    box-shadow: inset 0 1px 0 #78a0ed;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+    padding: 0 19px;
+    font-weight: bold;
+    min-width: 10px;
+  }
+
+
+  .shipHeader{
+    background-color: #e23f34;
+  }
+
+  .label1 {
+    min-height: 50px;
+    color : white;
+      background-color: #e23f34;
+  }
+
+  .v-Notification.mystyle {
+    background: #00F800;
+    border: 5px solid #00F800;
+    color: black;
+  }
+}
